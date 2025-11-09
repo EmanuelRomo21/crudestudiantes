@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+@layer components {
+  .card { @apply bg-white rounded-xl shadow-sm ring-1 ring-black/5; }
+  .card-body { @apply p-6; }
+
+  .btn { @apply inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition hover:opacity-90; }
+  .btn-primary { @apply bg-blue-600 text-white; }
+  .btn-neutral { @apply bg-gray-100 text-gray-900; }
+  .btn-outline { @apply border border-gray-300 text-gray-800 bg-white; }
+  .btn-danger { @apply bg-red-600 text-white; }
+
+  .badge { @apply inline-flex items-center rounded-md px-2 py-0.5 text-xs font-semibold; }
+  .badge-green { @apply bg-green-100 text-green-700; }
+  .badge-gray  { @apply bg-gray-100 text-gray-700; }
+
+  .table { @apply w-full border-separate border-spacing-0 text-sm; }
+  .th { @apply sticky top-0 bg-gray-50 text-gray-600 font-semibold text-left px-4 py-2 border-b border-gray-200; }
+  .td { @apply px-4 py-3 border-b border-gray-100; }
+  .row { @apply hover:bg-gray-50 transition; }
+}
